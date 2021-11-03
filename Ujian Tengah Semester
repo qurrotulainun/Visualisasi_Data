@@ -1,0 +1,24 @@
+UJIAN TENGAH SEMESTER VISUALISASI DATA
+NAMA : QURROTUL AINUN NI'MATUS SHOLIHAH
+NIM : 193100056
+
+1. Vektor adalah besaran yang memiliki besar dan arah.
+
+2. Mengetahui karakter pada setiap vektor.
+
+3. 
+a. A <- c(1,2,3,4,5,6,7)
+mode(A)
+b. B <- c("Ana", "Ani", "Ina", "Ini")
+mode(B)
+
+4. 
+a. Menampilkan elemen ke - 2 pada vektor X
+b. Mengganti elemen ke - 2 pada vektor X menjadi 12
+
+5. Matrix adalah susunan bilangan yang membentuk baris dan kolom.
+
+6.
+a.Nrow menunjukkan baris pada matrix .. sedangkan Ncol menunjukkan kolom pada matrix
+b. Not available merupakan bilangan null
+c. c <- matrix(nrow = 3, ncol = 2)
