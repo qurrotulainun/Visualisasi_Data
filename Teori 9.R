@@ -1,0 +1,30 @@
+bilangan <- c(1,2,3,2,3,3,4,5,3,2,3,4,5,5,5,5,3,2,1,3)
+length (bilangan)
+table (bilangan)
+jawaban <- c("ya", "tidak", "tidak", "tidak", "ya")
+length (jawaban)
+table (jawaban)
+tabel <- table (bilangan)
+barplot (tabel, col = c(heat.colors(5)), main = "Grafik Batang Frekuensi", xlab = "Nilai", ylab = "Jumlah")
+A <- c(1,2,3,4,5,6,7,8,9,10,10,9,8,4,3,2)
+B <- cut(A, breaks = c(1,5,10),include.lowest = TRUE, right = FALSE )
+tabel <- table(B)
+tabel
+names(tabel)
+names(tabel) <- c("1<=x<5", "5<=x<=10")
+tabel
+pendidikan <- c("S1", "S1", "S1", "S1","S1", "S2", "S2", "S2", "S2", "S2")
+jenis_kelamin <- c("Laki-laki", "Laki-laki", "Laki-laki", "Perempuan", "Perempuan", "Perempuan", "Perempuan", "Perempuan", "Perempuan", "Laki-laki")
+data_frame <- data.frame(pendidikan, jenis_kelamin)
+tabel_kontingensi <- table(data_frame)
+tabel_kontingensi
+data_frame
+X <- c("S1", "S1", "S1", "S1","S1", "S2", "S2", "S2", "S2", "S2")
+Y <- c("Laki-laki", "Laki-laki", "Laki-laki", "Perempuan", "Perempuan", "Perempuan", "Perempuan", "Perempuan", "Perempuan", "Laki-laki")
+Z <- c(4.6, 5.5, 3.2, 5.5, 4.9, 5.9, 8.7, 6.5, 6.5, 9.9)
+Data_Frame <- data.frame(X, Z)
+Data_Frame
+mean(subset(Data_Frame, X == "S1") $Z)
+mean(subset(Data_Frame, X == "S2") $Z)
+min(subset(Data_Frame, X == "S1") $Z)
+max(subset(Data_Frame, X == "S2") $Z)
