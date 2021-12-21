@@ -5,6 +5,10 @@ Jumlah_A=simpan$jenis.barang.A
 Jumlah_B=simpan$jenis.barang.B
 Jumlah_C=simpan$jenis.barang.C
 Tahun=simpan$tahun
+A=c(Jumlah_A)
+B=c(Jumlah_B)
+C=c(Jumlah_C)
+Jumlah=c(A, B, C)
 
 install.packages("ggplot2")
 library(ggplot2)
@@ -38,3 +42,7 @@ barplot(Jumlah_C, Tahun, main="Penjualan Barang Jenis C Dari Tahun 2001 - 2007",
                                                                            "2005", "2006", "2007"))
 ggplot(simpan, aes(x=Tahun, y=Jumlah_C))+geom_bar(stat="identity", fill=heat.colors(7))
 
+#Menghasilkan Grafik Lingkaran
+pie(Jumlah,labels=Jumlah, main="Data Penjualan Produk A, B, dan C", col=colors)
+colors=c("gray", "white", "black")
+legend(1,0.5, c("Produk A (90-160)", "Produk B (85-130)", "Produk C (50-85"), cex=0.8, fill=colors)
