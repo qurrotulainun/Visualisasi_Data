@@ -17,7 +17,8 @@ lines(C, type="o", col="blue")
 lines(D, type="o", col="green")
 lines(E, type="o", col="black")
 title(main="Macam - Macam Bilangan Real", col.main="red", font.main=4)
-legend("topleft", inset = 0.05, c("Bilangan Genap", "Bilangan Ganjil", "Bilangan Prima", "Bilangan Komposit"), fill = c("red", "blue", "green", "black"), cex=0.8, bg="lightblue")
+legend("topleft", inset = 0.05, c("Bilangan Genap", "Bilangan Ganjil", "Bilangan Prima", "Bilangan Komposit"), 
+       fill = c("red", "blue", "green", "black"), cex=0.8, bg="lightblue")
 
 #Menghasilkan Diagram Batang
 barplot(B, F, main="Bilangan Genap",
