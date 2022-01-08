@@ -1,3 +1,8 @@
+#Nama : Qurrotul Ainun Ni'matus Sholihah
+#NIM : 193100056
+#Prodi : Sistem Informasi
+#Pre-Test Ujian Akhir Semester
+
 A = read.table("D:/Visualisasi Data/20BilanganAsli.csv", header=TRUE, sep=",") #membaca data simpan
 A
 
