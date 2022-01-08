@@ -1,3 +1,8 @@
+#Nama : Qurrotul Ainun Ni'matus Sholihah
+#NIM : 193100056
+#Prodi : Sistem Informasi
+#Praktikum Teori 10
+
 simpan=read.table("D:/Visualisasi Data/data3.2.csv", header=TRUE, sep=",") #membaca data simpan
 simpan
 
@@ -18,7 +23,7 @@ plot.new()
 plot(Tahun, Jumlah_A, type="o", col="red", xlim=c(2001,2007), ylim=c(40,180), xlab="Tahun", ylab="Jenis Barang A, B, dan C")
 lines(Tahun, Jumlah_B, type="o", col="blue")
 lines(Tahun, Jumlah_C, type="o", col="green")
-title(main="Data njuPealan Barang A, B, C, dari Tahun 2001-2007", col.main="red", font.main=4)
+title(main="Data Penjualan Barang A, B, C, dari Tahun 2001-2007", col.main="red", font.main=4)
 
 #Menghasilkan Diagram Batang
 barplot(Jumlah_A, Tahun)
@@ -43,6 +48,6 @@ barplot(Jumlah_C, Tahun, main="Penjualan Barang Jenis C Dari Tahun 2001 - 2007",
 ggplot(simpan, aes(x=Tahun, y=Jumlah_C))+geom_bar(stat="identity", fill=heat.colors(7))
 
 #Menghasilkan Grafik Lingkaran
-pie(Jumlah,labels=Jumlah, main="Data Penjualan Produk A, B, dan C", col=colors)
 colors=c("gray", "white", "black")
-legend(1,0.5, c("Produk A (90-160)", "Produk B (85-130)", "Produk C (50-85"), cex=0.8, fill=colors)
+pie(Jumlah,labels=Jumlah, main="Data Penjualan Produk A, B, dan C", col = colors)
+legend(1,0.5, c("Produk A (90-160)", "Produk B (85-130)", "Produk C (50-85)"), cex=0.8, fill=colors)
